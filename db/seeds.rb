@@ -40,7 +40,7 @@ Hahahaha, c’était un plaisir de fumer un pétard avec vous.
 
 J’espère que vous passerez un bon moment. Vous me manquez grave les gars. Le framapad j’en peux plus, j’en peux plus de cette 1D de merde moi, j’ai l’impression qu’il faut que je bloque 4h pour écrire un truc, ça me constipe. Il n’y a plus rien qui sort.
 
-Je vous kiffe putain !")
+Je vous kiffe putain !", read: false)
 
   Email.create(object: "News from Breizh", body: "Juuuuuuuuuuuuuuuu !!!!!!
 
@@ -90,7 +90,7 @@ Jeanne d'Arc s'est éteinte le 30 mai 1431, environ deux heures après sa mort. 
 
 A vite l’amiGO !
 
-Cess Mez, une quelqu'une qui vous veut du bien.")
+Cess Mez, une quelqu'une qui vous veut du bien.", read: false)
 
 Email.create(object: "Qua taaaaaaalll ??!",body:"Les Loulousss !!!!!!!
 
@@ -246,5 +246,5 @@ J'espère que vous allez bien, que vous vous amusez, que vous profitez.
 J'espère aussi qu'un jour vous me reviendrez...
 J'ai encore aucune date pour mon séjour au states... vous serez les premiers prévenus....bien entendu !
 
-Je vous embrasse, bonne journée les loulous !!!!!!!!!!!! Et à très viiiiiiiiiiiiiite pour de nouvelles aventures !!!!")
+Je vous embrasse, bonne journée les loulous !!!!!!!!!!!! Et à très viiiiiiiiiiiiiite pour de nouvelles aventures !!!!", read: false)
 

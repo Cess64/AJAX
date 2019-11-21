@@ -1,0 +1,25 @@
+<div class="email_show">
+
+
+	
+ 	<h4 class="email_object"> Objet du mail : <%= @email.object %></h4>   <!--all[email.id].-->
+	<hr>
+	<p class ="email_content"> <%= @email.body %></p>
+
+ <div id='mail-display-buttons'>
+	<div class="delete_email">
+  		<%= form_tag(email_path, method: :delete, class: "form", remote: true) do %>
+
+    	<%= submit_tag 'Supprimer email'%>
+ 	 <% end %>
+
+	</div>
+
+    <div class="update_email">
+  	    <%= form_tag(email_path, method: :put, class: "form", remote: true) do %>
+
+        <%= submit_tag 'Transferer email'%>
+      <% end %>
+
+    </div>
+</div>

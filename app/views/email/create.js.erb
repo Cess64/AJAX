@@ -1,0 +1,5 @@
+$(document).ready(function() {
+  //ajout du object mail a la liste
+  $(".email-list").find("visionnage").append("<%= j render '_show',email: @email %>");
+  alert("email créé")
+});

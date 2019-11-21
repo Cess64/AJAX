@@ -5,27 +5,13 @@
 
     <!-- BTN GET -->
 <div class="generate_email">
-  <%= form_tag(create_email_path, method: :post, class: "form") do %>
-
-    <%= create_email_path  %>
-
+  <%= form_tag(create_email_path, method: :post, class: "form", remote: true) do %>
+         <%= create_email_path %>
     <%= submit_tag 'Recevoir un email'%>
   <% end %>
 </div>
 <hr>
-    <!-- BTN CREATE -->
 
-<div class="form">
-  <%= form_tag(root_path, method: :post, class: "form") do %>
-    <label for="Object">Object
-    <%= text_field_tag  :object %>
-
-    <label for="Selected Email">body
-    <%= text_field_tag :body  %>
-
-    <%= submit_tag 'Écrire un email', :name => 'commit'%>
-  <% end %>
-</div>
 
     <!-- LISTE DES MAILS -->
 <div id= "email-list">
@@ -35,14 +21,15 @@
 			<TD align = center width=20% > Liste des Emails </TD>
 			<TD align = center width=80% > Contenu de l'Email </TD>
 		</TR>
-				<% @emails.each do |email| %>
-		<TR>		
-			<TD  align = center width=20%><b> <%= email.object %> </b></TD>
-			<TD  width = 80% > <i> <%=  "   "   %> </i> </TD>
+			
+      	<% @emails.each do |email| %>
+		<TR id="visionnage">		
+			<TD  align = center width = 20% > <b> <%= email.object %> </b> </TD>
+			<TD  align = center width = 80% > <a> <%= link_to "Visionner email : "+ email.object, email_path(:id => email.id) %> </TD>
 		</TR>
 				<% end %>
 	</TABLE>
 </CENTER> 
-</div>
+<footer>
   
-
+</footer>
